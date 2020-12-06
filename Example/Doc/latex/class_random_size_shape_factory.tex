@@ -1,0 +1,99 @@
+\hypertarget{class_random_size_shape_factory}{}\doxysection{Random\+Size\+Shape\+Factory Class Reference}
+\label{class_random_size_shape_factory}\index{RandomSizeShapeFactory@{RandomSizeShapeFactory}}
+
+
+{\ttfamily \#include $<$shapefactory.\+h$>$}
+
+
+
+Collaboration diagram for Random\+Size\+Shape\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{class_random_size_shape_factory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_shape}{Shape}} $\ast$ \mbox{\hyperlink{class_random_size_shape_factory_aebd390118a1e8874fc7f2e8c5a62a627}{create\+Shape}} (std\+::string name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_random_size_shape_factory_ac8d58a984e5b1f35529e4099bb0b095b}{Random\+Size\+Shape\+Factory}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A factory class to generate Shapes with randomly generated sizes/dimensions.
+
+\begin{DoxyAuthor}{Author}
+Brent Nash 
+\end{DoxyAuthor}
+
+
+Definition at line 13 of file shapefactory.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_random_size_shape_factory_ac8d58a984e5b1f35529e4099bb0b095b}\label{class_random_size_shape_factory_ac8d58a984e5b1f35529e4099bb0b095b}} 
+\index{RandomSizeShapeFactory@{RandomSizeShapeFactory}!RandomSizeShapeFactory@{RandomSizeShapeFactory}}
+\index{RandomSizeShapeFactory@{RandomSizeShapeFactory}!RandomSizeShapeFactory@{RandomSizeShapeFactory}}
+\doxysubsubsection{\texorpdfstring{RandomSizeShapeFactory()}{RandomSizeShapeFactory()}}
+{\footnotesize\ttfamily Random\+Size\+Shape\+Factory\+::\+Random\+Size\+Shape\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Default constructor. Private so no one can ever instantiate this class. 
+
+Definition at line 30 of file shapefactory.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_random_size_shape_factory_aebd390118a1e8874fc7f2e8c5a62a627}\label{class_random_size_shape_factory_aebd390118a1e8874fc7f2e8c5a62a627}} 
+\index{RandomSizeShapeFactory@{RandomSizeShapeFactory}!createShape@{createShape}}
+\index{createShape@{createShape}!RandomSizeShapeFactory@{RandomSizeShapeFactory}}
+\doxysubsubsection{\texorpdfstring{createShape()}{createShape()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shape}{Shape}} $\ast$ Random\+Size\+Shape\+Factory\+::create\+Shape (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Static factory method for creating shapes. Takes in a string representation of a shape and returns a pointer to that particular shape. Only works for shapes that derive from the \mbox{\hyperlink{class_shape}{Shape}} object. Center points for returned shapes will always be (0,0).
+
+\begin{DoxyPrecond}{Precondition}
+None 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Does not change the object 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the shape to generate (e.\+g. \char`\"{}triangle\char`\"{}, \char`\"{}rectangle\char`\"{}, or \char`\"{}circle\char`\"{}). Input is case-\/sensitive. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to a \mbox{\hyperlink{class_shape}{Shape}} object dynamically allocated on the heap if \char`\"{}name\char`\"{} is a valid, recognized shape type or N\+U\+LL if \char`\"{}name\char`\"{} does not specify the name of a known shape. 
+\end{DoxyReturn}
+
+
+Definition at line 36 of file shapefactory.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_random_size_shape_factory_aebd390118a1e8874fc7f2e8c5a62a627_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_random_size_shape_factory_aebd390118a1e8874fc7f2e8c5a62a627_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Include/\mbox{\hyperlink{shapefactory_8h}{shapefactory.\+h}}\item 
+Src/\mbox{\hyperlink{shapefactory_8cpp}{shapefactory.\+cpp}}\end{DoxyCompactItemize}

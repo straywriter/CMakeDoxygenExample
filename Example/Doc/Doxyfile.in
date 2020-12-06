@@ -1,0 +1,61 @@
+PROJECT_NAME           = "@CMAKE_PROJECT_NAME@"
+PROJECT_NUMBER         = @VERSION_MAJOR@.@VERSION_MINOR@.@VERSION_PATCH@
+PROJECT_BRIEF = "project brief"
+PROJECT_NUMBER ="1.0"
+STRIP_FROM_PATH        = @PROJECT_SOURCE_DIR@ \
+                         @PROJECT_BINARY_DIR@
+INPUT                  = @doxy_main_page@ \
+                         @PROJECT_SOURCE_DIR@ \
+FILE_PATTERNS          = *.h \
+                         *.cpp
+
+
+#file 
+HTML_EXTRA_STYLESHEET = @CMAKE_CURRENT_SOURCE_DIR@/doxygen/customdoxygen.css
+HTML_HEADER = @CMAKE_CURRENT_SOURCE_DIR@/doxygen/header.html
+HTML_FOOTER = @CMAKE_CURRENT_SOURCE_DIR@/doxygen/footer.html
+
+
+# Color style
+HTML_COLORSTYLE_HUE    = 220
+HTML_COLORSTYLE_SAT    = 40
+HTML_COLORSTYLE_GAMMA  = 80
+
+
+# in class diagrams, you will have members and such
+# Also they will be bigger
+UML_LOOK               = YES
+UML_LIMIT_NUM_FIELDS   = 16
+
+
+# GENERATE_TREEVIEW = ALL
+# INLINE_SOURCES = YES 
+SOURCE_BROWSER = YES
+
+RECURSIVE              = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXCLUDE_PATTERNS       = */thirdparty/*
+USE_MDFILE_AS_MAINPAGE = @doxy_main_page@
+
+TOC_EXPAND             = YES 
+
+HAVE_DOT              = YES
+
+DOT_FONTNAME           = Consolas
+
+DOT_FONTSIZE           = 16
+
+GRAPHICAL_HIERARCHY    = YES
+
+DIRECTORY_GRAPH        = YES
+
+
+DOT_IMAGE_FORMAT       = png
+
+
+CALL_GRAPH            = YES
+CALLER_GRAPH          = YES
+# UML_LOOK              = YES
+DOT_PATH              = D:\Software\Scoop\ScoopLocal\apps\graphviz\2.44.1\bin
