@@ -11,7 +11,6 @@ cmake_minimum_required (VERSION 2.8)
 
 # enable if doxygen found
 find_package(Doxygen )
-message(STATUS "Can build doc?                            ${DOXYGEN_FOUND}")
 if(DOXYGEN_FOUND)
     # Search for plantUML for creating UML diagrams from doxygen
     # find_program(PLANT_UML_PATH plantuml.jar PATH_SUFFIXES PlantUML plantuml Plantuml 
@@ -65,7 +64,3 @@ endif()
 # if (CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
 #     set (CMAKE_INSTALL_PREFIX "${CMAKE_BINARY_DIR}/dist" CACHE PATH "Install path prefix, prepended onto install directories." FORCE )
 # endif()
-
-
-
-
