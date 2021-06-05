@@ -22,8 +22,10 @@
 
   [官网](https://graphviz.org/)
 
+  执行如下语句启动该软件否则会出错
+
   ```
-  doc -c
+  dot -c
   ```
 
   
